@@ -1,12 +1,5 @@
 {
-  
-import "./global.css"
- 
-export default App() {
-  /* Your App */
-}
-
-"expo": {
+  "expo": {
     "name": "prodev-mobile-app-0x06",
     "slug": "prodev-mobile-app-0x06",
     "version": "1.0.0",
