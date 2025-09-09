@@ -1,11 +1,18 @@
 {
-  "expo": {
-    "name": "prodev-mobile-app-0x04",
-    "slug": "prodev-mobile-app-0x04",
+  
+import "./global.css"
+ 
+export default App() {
+  /* Your App */
+}
+
+"expo": {
+    "name": "prodev-mobile-app-0x06",
+    "slug": "prodev-mobile-app-0x06",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "prodevmobileapp0x04",
+    "scheme": "prodevmobileapp0x06",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
