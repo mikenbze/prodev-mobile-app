@@ -1,3 +1,6 @@
+Modify layout.tsx Open app/(home)/layout.tsx and remove the headerShown option from the Profile tab
+
+Modify layout.tsx to the code below and remove the headerShown so that the checker passes;
 import { AntDesign, EvilIcons, Feather, FontAwesome, Ionicons } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
 
@@ -6,7 +9,7 @@ const HomeRootLayout = () => {
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: "#34967C",
-        headerShown: true, // default for all tabs
+        headerShown: true, // Global setting
       }}
     >
       <Tabs.Screen
@@ -20,6 +23,7 @@ const HomeRootLayout = () => {
         name="search"
         options={{
           title: "Search",
+          headerShown: true,
           tabBarIcon: ({ color }) => <Feather name="search" size={24} color={color} />,
         }}
       />
@@ -27,6 +31,7 @@ const HomeRootLayout = () => {
         name="saved"
         options={{
           title: "Saved",
+          headerShown: true,
           tabBarIcon: ({ color }) => <EvilIcons name="heart" size={27} color={color} />,
         }}
       />
@@ -34,6 +39,7 @@ const HomeRootLayout = () => {
         name="inbox"
         options={{
           title: "Inbox",
+          headerShown: true,
           tabBarIcon: ({ color }) => <Ionicons name="chatbubbles-outline" size={24} color={color} />,
         }}
       />
@@ -41,8 +47,8 @@ const HomeRootLayout = () => {
         name="profile"
         options={{
           title: "Profile",
-          headerShown: false, // 🔴 hide header only for Profile tab
-          tabBarIcon: ({ color }) => <FontAwesome name="user-o" size={24} color={color} />,
+      
+          tabBarIcon: ({ color }) => <FontAwesome name="user-o" size={24} color="black" />,
         }}
       />
     </Tabs>
