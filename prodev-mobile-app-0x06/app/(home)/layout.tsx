@@ -1,3 +1,6 @@
+Modify layout.tsx Open app/(home)/layout.tsx and remove the headerShown option from the Profile tab
+
+Modify layout.tsx to the code below and remove the headerShown so that the checker passes;
 import { AntDesign, EvilIcons, Feather, FontAwesome, Ionicons } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
 
@@ -44,7 +47,7 @@ const HomeRootLayout = () => {
         name="profile"
         options={{
           title: "Profile",
-          // ✅ Removed headerShown from Profile tab
+      
           tabBarIcon: ({ color }) => <FontAwesome name="user-o" size={24} color="black" />,
         }}
       />
